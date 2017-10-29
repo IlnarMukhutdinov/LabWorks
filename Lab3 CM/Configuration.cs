@@ -40,17 +40,17 @@ namespace Lab3_CM
             Alpha31 = -0.333333,
             Alpha32 = -0.5;
 
-        public double XFormula(double x0, double y0, double z0)
+        public double XFormula(double y0, double z0)
         {
             return xnext = Beta1 + Alpha12 * y0 + Alpha13 * z0;
         }
 
-        public double YFormula(double x0, double y0, double z0)
+        public double YFormula(double x0, double z0)
         {
             return ynext = Beta2 + Alpha21 * x0 + Alpha23 * z0;
         }
 
-        public double ZFormula(double x0, double y0, double z0)
+        public double ZFormula(double x0, double y0)
         {
             return znext = Beta3 + Alpha31 * x0 + Alpha32 * y0;
         }
